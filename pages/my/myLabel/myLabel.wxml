@@ -1,0 +1,4 @@
+<view class="feedback-view">
+<textarea  placeholder='请输入个性签名，限制36个字。' bindinput="changeTextarea"  value="{{signature}}" maxlength='36'></textarea>
+<button bindtap="changeSignature" >保存</button>
+</view>

@@ -1,0 +1,6 @@
+<view class="contact-view">
+<view class="qq-view"><image src='/img/qq.png' /><input disabled bindlongtap="copyData" data-value="{{qqNumber}}"  placeholder='暂无' value="{{qqNumber}}" /></view>
+<view class="wechat-view"><image src="/img/wechat.png" /><input disabled bindlongtap="copyData" data-value="{{wechatNumber}}"  placeholder='暂无' value="{{wechatNumber}}" /></view>
+<view class="phone-view"><image src="/img/callphone.png"  /><input disabled bindlongtap="copyData" data-value="{{telephoneNumber}}"  value="{{telephoneNumber}}" placeholder='暂无' /></view>
+
+</view>

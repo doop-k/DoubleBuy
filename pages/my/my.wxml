@@ -1,0 +1,58 @@
+<!-- 
+<view class="userSetting">
+<text></text>
+
+</view> -->
+<view class="userPage-view" wx:if="{{loginStatus}}">
+<view class="bkImgShadow" catchtap='operaBgImg' data-bgurl="{{backgroundUrl}}"></view>
+  <image class="bgImg" mode="aspectFill"      src="{{backgroundUrl}}"></image>
+  <view class="userInfo-view">
+  
+  <image class="myAvatarUrl"  mode="aspectFill"   catchtap='operaAvatar' data-avatarurl="{{avatarUrl}}" src="{{avatarUrl}}"></image>
+    
+    <text class="myNickname" catchtap='operaNickname' >{{nickname}}</text>
+  </view>
+  <view class="introduce-view" >
+    <image mode="widthFix" src="/img/pen.png" />
+    <input disabled  catchtap='updateMyLabel' placeholder='请输入个性签名' maxlength='30' value="{{signature}}"></input>
+  </view>
+  <view class="underline-view" />
+  <view class=" salesSpace-view " catchtap='previewMySelling'>
+    <view class="saleImgText-view " >
+      <image mode="widthFix " src="/img/stars.png" />
+      <text>我正在出售的物品</text>
+    </view>
+    <view class="showImg-view">
+      <block wx:for="{{sellImgs}}" wx:key="*this">
+        <image mode="aspectFill" class="showImg" src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class=" salesSpace-view "  catchtap='previewMyColl'>
+    <view class="saleImgText-view ">
+      <image mode="widthFix " src="/img/coll.png" />
+      <text>我的收藏</text>
+    </view>
+    <view class="showImg-view">
+      <block wx:for="{{collImgs}}" wx:key="*this">
+        <image mode="aspectFill" class="showImg" src="{{imgs}}"></image>
+      </block>
+    </view>
+  </view>
+  <view class="setting-view" bindtap='openSetting'>
+    <image mode="aspectFill" src="/img/setting.png" />
+      <text>设置和帮助</text>
+  </view>
+</view>
+
+<view class="login-view" wx:if="{{!loginStatus}}">
+<view class="banner-view">
+<text class="title">一一电科院二手交易平台</text>
+ <text class="copyright-text">copyright 2019</text>
+<image mode="aspectFill"  src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1565170314&di=7669544c4ae0bad57453ab521d4c7f9b&imgtype=jpg&er=1&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201802%2F09%2F20180209103321_ZytWu.jpeg" />
+
+</view>
+  
+  <button open-type="getUserInfo"  bindgetuserinfo="userLogin" >授权信息登陆</button>
+ 
+</view>

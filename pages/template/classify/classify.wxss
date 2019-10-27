@@ -1,0 +1,26 @@
+.classify-view {
+  display: flex;
+  flex-direction: row;
+    margin-top:10rpx;
+}
+
+.classify-view view {
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.classify-view view:active {
+ background:rgb(199, 195, 195);
+
+}
+
+.classify-view view image {
+  position: relative;
+  left:60rpx;
+  height: 70rpx;
+  width: 70rpx;
+}
+.classify-view view text{
+      font-size: 24rpx;
+}

@@ -1,0 +1,31 @@
+.nodata-view {
+  display: flex;
+  flex-direction: row;
+  margin-top:100rpx;
+  padding:40rpx;
+}
+
+.leftLine {
+  margin-top: 25rpx;
+  border-top: 1rpx solid rgb(141, 135, 135);
+  width: 200rpx;
+  height: 0rpx;
+}
+
+.rightLine {
+  margin-top: 25rpx;
+  border-top: 1rpx solid rgb(141, 135, 135);
+  width: 200rpx;
+  height: 0rpx;
+}
+.faceImg{
+  margin-left:2rpx;
+  width:40rpx;
+  height:40rpx;
+}
+.text{
+
+  font-size: 28rpx;
+  margin-right: 3rpx;
+  color:rgb(141, 135, 135);
+}

@@ -1,0 +1,21 @@
+.search-view{
+  
+  height:60rpx;
+  display: flex;
+  flex-direction:row;
+  background:rgba(233, 191, 52, 0.829);
+  margin-top:10rpx 5rpx 10rpx 5rpx;
+  margin:10rpx;
+  border-radius: 10rpx;
+  padding:0rpx 0rpx 0rpx 40rpx;
+}
+.search{
+  width:80%;
+  margin-left:30rpx;
+  font-size: 26rpx;
+  
+}
+.search-icon{
+  margin-top:11rpx;
+  
+}

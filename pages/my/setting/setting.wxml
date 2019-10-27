@@ -1,0 +1,8 @@
+<view class="settingHelp-view">
+<text bindtap='openContact'>联系方式</text>
+<text bindtap='openAuthInfo'>授权信息</text>
+<text bindtap='openUseHelp'>使用帮助</text>
+<text bindtap='openFeedback'>反馈</text>
+<text bindtap='openAbout'>关于</text>
+</view>
+<text class="copyright">copyright 2019</text>

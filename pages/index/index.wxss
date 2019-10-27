@@ -1,0 +1,44 @@
+/* pages/index/index.wxss */
+@import "/pages/template/search/search";
+@import "/pages/template/classify/classify";
+@import "/pages/template/productTmp/productTmp";
+.swiper {
+  height: 350rpx;
+  width: 100%;
+}
+
+.swiper image {
+  height: 100%;
+  width: 100%;
+}
+.choose-view{
+  display:flex;
+  flex-direction:row;
+  
+}
+.btnChoose{
+   margin: 10rpx;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+  font-size: 25rpx;
+  width:50%;
+  line-height: 60rpx;
+
+}
+
+.classify{
+  display: flex;
+  flex-direction: row;
+}
+.msg-view{
+  position:fixed;
+  bottom:100rpx;
+  right:20rpx;
+
+
+}
+.msg-view image{
+  width:80rpx;
+  height:80rpx;
+}

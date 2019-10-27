@@ -1,0 +1,32 @@
+
+<view class="type-view">
+<button bindtap='chooseSell' wx:if="{{!isSell}}">二手物品</button>
+<picker class="chooseType"  wx:if="{{isSell}}" bindchange="bindSellTypeChange" value="{{sellTypeIndex}}" range="{{sellType}}">
+    <view class="picker" >
+     {{sellType[sellTypeIndex]}}
+    </view>
+  </picker>
+<button  wx:if="{{isFree}}" style="color:#fff;background:rgb(236, 105, 105);" >免费赠送</button>
+<button bindtap='chooseFree' wx:else  >免费赠送</button>
+</view>
+<view class="input-view" >
+<textarea bindinput='contentInput'  value="{{contentText}}" placeholder='请输入要发布的内容'></textarea>
+
+ <view class="productImg-view">
+ <block wx:for="{{images}}">
+ <image src="{{item}}" catchtap='previewLocalImg' data-imgUrl="{{item}}" catchlongtap='operaLocalImg' mode='aspectFill'  />
+ </block>
+ </view>
+<image class="chooseImg" bindtap='chooseLocalImg' src='/img/chooseImages.png'></image>
+
+
+</view>
+
+<view class="price-view" wx:if="{{!isFree}}">
+<image src="/img/price.png"   class="priceImg"></image><input bindinput='bintPriceInput' value="{{price}}" class="priceInput" type="digit" placeholder="请输入意向价格"/>
+
+</view>
+
+<button wx:if="{{btnFlag}}" style='margin:80rpx 40rpx 40rpx 40rpx;'   disabled >立即发布</button>
+<button wx:else class="btnSendInfo" bindtap='sendInfo'  >立即发布</button>
+

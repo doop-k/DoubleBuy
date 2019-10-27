@@ -1,0 +1,54 @@
+page {
+  background: #f5f5f5;
+}
+
+.contact-view {
+  display: flex;
+  flex-direction: column;
+  padding: 100rpx 40rpx 0rpx 40rpx;
+}
+
+.contact-view view {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20rpx;
+}
+
+.contact-view view image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.contact-view view input {
+  margin-left: 40rpx;
+  height: 80rpx;
+  width: 500rpx;
+  border-bottom: 1rpx solid rgb(172, 168, 168);
+}
+
+.contact-view view input:hover {
+  border-bottom: 1rpx solid rgb(12, 12, 12);
+}
+
+button {
+  position: absolute;
+  bottom: 100rpx;
+  background: rgb(221, 96, 96);
+  color: white;
+  width: 650rpx;
+  height: 100rpx;
+}
+
+/* .qq-view {
+
+}
+
+.wechat-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.phone-view {
+  display: flex;
+  flex-direction: row;
+} */

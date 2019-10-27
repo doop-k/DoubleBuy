@@ -1,0 +1,171 @@
+
+
+.userPage-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.bgImg {
+  width: 100%;
+  height: 422rpx;
+  
+}
+.bkImgShadow{
+  position: absolute;
+  width:100%;
+    height: 422rpx;
+  background:rgba(0,0,0,0.2);
+}
+.userInfo-view {
+  display: flex;
+  flex-direction: row;
+  padding-left: 40rpx;
+  position: absolute;
+  top: 350rpx;
+}
+
+.myAvatarUrl {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 120rpx;
+  background: white;
+}
+
+.myNickname {
+  margin-left: 20rpx;
+  color: white;
+  margin-top: 25rpx;
+}
+
+.introduce-view {
+  padding-left: 40rpx;
+  margin-top: 100rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.introduce-view image {
+  width: 30rpx;
+}
+
+.introduce-view input {
+  margin-left: 20rpx;
+  width: 80%;
+  color: #429ffc;
+}
+.introduce-view input:active{
+  background: rgb(218, 210, 210);
+}
+
+.salesSpace-view {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 40rpx 20rpx 40rpx;
+  margin-top: 50rpx;
+}
+
+.salesSpace-view:active {
+  background: rgb(226, 222, 222);
+}
+
+.saleImgText-view {
+  display: flex;
+  flex-direction: row;
+}
+
+.saleImgText-view image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.saleImgText-view text {
+  margin-left: 10rpx;
+}
+
+.showImg-view {
+  padding-left: 40rpx;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.showImg {
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 10rpx;
+
+}
+
+.underline-view {
+  margin: 20rpx 40rpx 0rpx 40rpx;
+  width: 100%;
+  height: 0rpx;
+  border: 1rpx solid #f5f5f5;
+}
+
+.setting-view {
+  padding: 20rpx 0rpx 20rpx 0rpx;
+  margin: 50rpx 40rpx 100rpx 40rpx;
+  border-radius: 10rpx;
+  border-bottom:1rpx solid rgb(116, 112, 112);
+}
+
+.setting-view image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.setting-view text {
+  margin-left: 20rpx;
+  position: absolute;
+}
+.setting-view:active{
+  background: rgb(226, 222, 222);
+}
+
+/* 授权登陆 */
+.login-view{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+
+}
+.login-view button{
+  position: absolute;
+  bottom:100rpx;
+  left:70rpx;
+  width:600rpx;
+  background:rgb(236, 105, 105);
+  color:white;
+}
+.login-view  image{
+
+}
+.login-view button:active{
+  background:rgb(219, 212, 212);
+}
+.banner-view{
+ 
+}
+.banner-view image{
+  opacity:0.6;
+  border-radius: 10rpx;
+
+}
+.banner-view .title{
+  position: absolute;
+  top:200rpx;
+  color:rgb(0, 2, 3);
+  left:100rpx;
+  font-size: 50rpx;
+  z-index: 99;
+}
+.copyright-text{
+  position: absolute;
+  font-size: 25rpx;
+  left:508rpx;
+  top:432rpx;
+}

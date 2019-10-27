@@ -1,0 +1,44 @@
+page{
+ background:linear-gradient(#fff1eb,#ace0f9);
+}
+.section-view{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.pid-view{
+  margin-top:100rpx;
+  color:rgb(148, 149, 150);
+  font-size: 35rpx;
+}
+.picker{
+  margin-top:20rpx;
+  padding-bottom: 20rpx;
+  background: white;
+  color:rgb(226, 94, 94);
+}
+.textarea{
+  margin-top:1rpx;
+  width:300px;
+  height:500rpx;
+  background: white;
+  margin-left:40rpx;
+  padding:40rpx;
+  color:rgb(136, 114, 114);
+
+}
+.btnOk{
+
+  position: absolute;
+  bottom: 40rpx;
+  width:600rpx;
+  height:80rpx;
+  background:#dd6f6f;
+  color:white;
+  margin-left: 71rpx;
+  border-radius: 10rpx;
+  
+}
+.btnOk:active{
+  background: rgb(185, 183, 183);
+}

@@ -1,0 +1,126 @@
+/* pages/index/newsDetail/newsDetail.wxss */
+.newsDetail-view{
+  display: flex;
+  flex-direction: column;
+}
+
+.broswer-view{
+  margin:0rpx 0rpx 40rpx 40rpx;
+  display: flex;
+  flex: row;
+  padding-left: 40rpx;
+
+  border-left: 1rpx solid rgb(83, 78, 78);
+}
+.broswer-view image{
+  width:40rpx;
+  height:40rpx;
+}
+.broswer-view text{
+  margin-left:20rpx;
+}
+
+
+
+
+
+
+
+.speakOfallUser-view{
+  display:flex;
+  flex-direction: column;
+  background:white;
+  padding: 0rpx 40rpx 100rpx 40rpx;
+
+}
+.speakTop-view{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+}
+.leftLine-view{
+  margin-top:20rpx;
+  border-top:1rpx solid black;
+  width:250rpx;
+}
+.rightLine-view{
+  margin-top:20rpx;
+  border-top:1rpx solid black;
+  width:250rpx;
+}
+.msg-view{
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.leaveUser-view{
+  display: flex;
+  flex-direction: row;
+
+}
+.leaveAvatarUrl{
+  width: 80rpx;
+  height:80rpx;
+  border-radius: 80rpx;
+}
+.leaveName{
+  font-size: 29rpx;
+  margin-top:25rpx;
+  margin-left: 20rpx;
+}
+.leaveMsgText{
+  margin-left: 100rpx;
+  font-size: 30rpx;
+}
+.leaveTimeText{
+  margin-top:20rpx;
+   margin-left: 100rpx;
+  font-size: 26rpx;
+  color:rgb(158, 152, 152);
+}
+.item-view{
+  border-bottom:1rpx solid rgb(173, 162, 162);
+  margin-top:20rpx;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10rpx;
+}
+
+.leaveMsg-view {
+  border-top:1rpx solid rgb(134, 119, 119);
+  position:fixed;
+  bottom: 0rpx;
+  width: 700rpx;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  padding: 10rpx 40rpx 10rpx 40rpx;
+  letter-spacing: 5rpx;
+  z-index: 99;
+  background: white;
+}
+
+.leaveMsg {
+  overflow: hidden;
+  width: 300px;
+  margin-left: 10rpx;
+  font-size: 40rpx;
+}
+
+.penImg {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.btnSend {
+  width: 200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: rgb(243, 75, 75);
+  color: white;
+}
+
+.btnSend:active {
+  background: rgb(233, 121, 121);
+}

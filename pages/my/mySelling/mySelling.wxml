@@ -1,0 +1,8 @@
+<import src="/pages/template/sellCollTmp/baseInfo"  />
+<import src="/pages/template/nodataTmp/nodataTmp" />
+<scroll-view wx:if="{{product[0]}}" scroll-y style="height:600px;" bindscrolltolower="updateData">
+  <block wx:for="{{product}}">
+    <template is="baseInfo" data="{{...item}}" />
+  </block>
+</scroll-view>
+<template wx:else is="nodataTmp" />

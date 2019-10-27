@@ -1,0 +1,4 @@
+<view class="nickname-view">
+<input bindinput="inputNickname" placeholder="请输入昵称" value="{{nickname}}"></input>
+<button bindtap="changeNickname" >保存</button>
+</view>

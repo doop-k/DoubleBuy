@@ -1,0 +1,2 @@
+@import "/pages/template/detailTmp/detailTmp";
+@import "/pages/template/operationTmp/operationTmp";

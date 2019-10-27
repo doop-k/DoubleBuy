@@ -1,0 +1,97 @@
+.baseInfo-view{
+  display: flex;
+    background: white;
+  flex-direction: column;
+
+}
+
+.free-view{
+
+  display: flex;
+  padding: 20rpx 40rpx 0rpx 40rpx;
+  flex-direction: row;
+}
+.free-view:active{
+  background: rgb(212, 207, 207);
+}
+.avataUrl-img{
+  width:120rpx;
+  height:120rpx;
+  border-radius: 160rpx;
+  border:1rpx solid white;
+}
+.userDate-view{
+  margin-top:30rpx;
+  margin-left:20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.nickNameText{
+  font-size: 30rpx;
+
+}
+.postDateText{
+  font-size: 20rpx;
+  color:rgb(138, 133, 131);
+}
+.detailTool{
+  width: 40rpx;
+height: 30px;
+position: relative;
+top: 4px;
+right: -163px;
+
+
+}
+
+.typeText{
+  color:rgb(248, 48, 91);
+}
+.contextText{
+  margin-left:10rpx;
+}
+.context-view{
+  margin-top:50rpx;
+
+  padding:0rpx 40rpx 0rpx 40rpx;
+}
+.body-view:active{
+    background: rgb(212, 207, 207);
+  
+}
+.images-view{
+  padding: 0rpx 40rpx 0rpx 40rpx;
+  margin-top:20rpx;
+
+}
+.productImage{
+  width:210rpx;
+  height:210rpx;
+  margin-left: 10rpx;
+}
+.productTmp-view{
+  margin-top:20rpx;
+
+  padding-top:20rpx;
+  padding-bottom:10rpx;
+  background: white;
+}
+
+.browser-view{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+
+  margin-top:20rpx;
+  margin-bottom: 20rpx;
+
+  padding:0rpx 40rpx 0rpx 40rpx;
+}
+
+.browserImg{
+  width:50rpx;
+  height:50rpx;
+}
+.browser-view text{
+  margin-left:10rpx;
+}

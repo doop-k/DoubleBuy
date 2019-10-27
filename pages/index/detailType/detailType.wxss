@@ -1,0 +1,21 @@
+/* pages/index/detailType/detailType.wxss */
+@import "/pages/template/productTmp/productTmp";
+@import "/pages/template/nodataTmp/nodataTmp";
+page{
+    background:#f5f5f5;
+}
+.type-view{
+  margin-left: 25rpx;
+  margin-top:10rpx;
+  border-radius: 10rpx;
+  width:700rpx;
+  height: 100rpx;
+  text-align: center;
+  color: white;
+  line-height: 100rpx;
+  background:rgb(236, 105, 105);
+
+}
+.type-view:active{
+    background:rgb(238, 147, 147);
+}

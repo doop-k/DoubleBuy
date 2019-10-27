@@ -1,0 +1,9 @@
+<template name="nodataTmp">
+<view class="nodata-view">
+<view class="leftLine"></view>
+<image class="faceImg" src="/img/face.png" mode="aspectFill" />
+<text class="text">这里什么都没有</text>
+<view class="rightLine"></view>
+</view>
+
+</template>

@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/my/my",
+    "pages/index/index",
+    "pages/index/detailInfo/detailInfo",
+    "pages/index/detailType/detailType",
+    "pages/index/detailInfo/contact/contact",
+    "pages/index/userPage/userPage",
+    "pages/index/userPage/hisSelling/hisSelling",
+    "pages/index/newsDetail/newsDetail",
+    "pages/index/prosecution/prosecution",
+    "pages/my/mySelling/mySelling",
+    "pages/my/myColl/myColl",
+    "pages/my/myLabel/myLabel",
+    "pages/my/myNickname/myNickname",
+    "pages/my/setting/setting",
+    "pages/my/setting/about/about",
+    "pages/my/setting/feedback/feedback",
+    "pages/my/setting/useHelp/useHelp",
+    "pages/my/setting/authInfo/authInfo",
+    "pages/my/setting/contact/contact",
+    "pages/post/post",
+    "pages/free/free"
+  ],
+  "window": {
+    "navigationBarTitleText": "电科院二手物品交易",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "backgroundColor": "#000",
+    "color": "#fff",
+    "selectedColor": "#f3f617",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "校内"
+      },
+      {
+        "pagePath": "pages/free/free",
+        "text": "赠送"
+      },
+      {
+        "pagePath": "pages/post/post",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

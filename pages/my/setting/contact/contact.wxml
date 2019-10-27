@@ -1,0 +1,6 @@
+<view class="contact-view">
+<view class="qq-view"><image src='/img/qq.png' /><input type="number"  bindblur="inputQQ" maxlength='11' placeholder='请输入QQ号' value="{{qqNumber}}" /></view>
+<view class="wechat-view"><image src="/img/wechat.png" /><input type="text"   bindblur="inputWechat" placeholder='请输入微信号' value="{{wechatNumber}}" /></view>
+<view class="phone-view"><image src="/img/callphone.png"  /><input type="number"   bindblur="inputTel"maxlength="11" value="{{telephoneNumber}}" placeholder='请输入11位电话号码' /></view>
+<button bindtap="save">保存</button>
+</view>

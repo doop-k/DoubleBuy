@@ -1,0 +1,36 @@
+<template name="productTmp">
+  <view class="productTmp-view" >
+
+
+    <view class="free-view" catchtap='openUserPage' data-openid="{{openid}}"   >
+      <image src='{{avatarUrl}}' class="avataUrl-img"></image>
+      <view class="userDate-view">
+        <text class="nickNameText">{{nickname}}</text>
+        <text class="postDateText">{{time}}</text>
+      </view>
+      <text wx:if="{{price}}" class="priceText">￥{{price}}</text>
+      <text wx:else class="priceText">免费</text>
+    </view>
+
+
+    <view class="body-view" catchtap='openDetailPage' data-pid="{{pid}}">
+
+
+      <view class="context-view">
+        <text wx:if="{{sellType}}" class="typeText">#{{sellType}}#</text>
+        <text class="contextText">{{context}}</text>
+      </view>
+      <view  wx:if="{{imgUrl[0]}}" class="images-view">
+        <block wx:for="{{imgUrl}}">
+          <image class="productImage" catchtap='previewImg' data-img="{{item}}" data-imgs="{{imgUrl}}" src="{{item}}" mode="aspectFill" ></image>
+
+        </block>
+      </view>
+      <view class="browser-view">
+        <image mode="widthFix" class="browserImg" src="/img/browser.png"></image>
+        <text>{{view}}</text>
+      </view>
+    </view>
+
+  </view>
+</template>

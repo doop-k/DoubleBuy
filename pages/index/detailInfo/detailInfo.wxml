@@ -1,0 +1,3 @@
+<import src="/pages/template/detailTmp/detailTmp" />
+<import src="/pages/template/operationTmp/operationTmp" />
+<template  is="detailTmp"  data="{{...productInfo,leaveMsg,leaveMsgValue}}" />

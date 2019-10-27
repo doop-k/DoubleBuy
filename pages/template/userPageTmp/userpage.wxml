@@ -1,0 +1,27 @@
+<template name="userpage">
+  <view class="userPage-view">
+  <view class="bkImgShadow" catchtap='previewBgImg' data-bgurl="{{backgroundUrl}}"></view>
+    <image class="bgImg"  mode="aspectFill" src="{{backgroundUrl}}"></image>
+    <view class="userInfo-view">
+      <image catchtap='previewAvatar' data-avatarurl="{{avatarUrl}}" class="myAvatarUrl" src="{{avatarUrl}}"></image>
+      <text  class="myNickname">{{nickname}}</text>
+    </view>
+    <view class="introduce-view">
+      <image mode="widthFix" src="/img/pen.png" />
+<input value="{{signature}}"  disabled placeholder='对方没有什么个性 ···' maxlength='30' ></input>
+</view>
+<view class="underline-view"  />
+<view class=" salesSpace-view " catchtap='previewhisSelling'  data-openid="{{openid}}" >
+<view class="saleImgText-view " >
+<image mode="widthFix " src="/img/stars.png" />
+      <text>对方正在出售的物品</text>
+    </view>
+    <view wx:if="{{sellImgs[0]}}" class="showImg-view">
+      <block wx:for="{{sellImgs}}">
+        <image mode="aspectFill" class="showImg" src="{{item}}"></image>
+      </block>
+    </view>
+  </view>
+
+  </view>
+</template>

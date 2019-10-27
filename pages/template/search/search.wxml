@@ -1,0 +1,7 @@
+<template name="search">
+<view class="search-view">
+<icon class="search-icon" color="white" type="search" size="15" />
+<input placeholder='搜索' placeholder-style="left:120px;color:white" class="search"></input>
+<icon type="clear" wx:if="{{display_clear}}" size="20" />
+</view>
+</template>

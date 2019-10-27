@@ -1,0 +1,3 @@
+/* pages/free/free.wxss */
+@import "/pages/template/productTmp/productTmp";
+@import "/pages/template/nodataTmp/nodataTmp";

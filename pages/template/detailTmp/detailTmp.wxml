@@ -1,0 +1,62 @@
+<template name="detailTmp">
+<scroll-view scroll-y bindscrolltolower="updateData" style="height:563px;">
+  <view class="detailHead-view" bindtap='openUserPage' data-openid="{{openid}}"   >
+    <image class="avatarUrl" src="{{avatarUrl}}"></image>
+    <view class="userND-view">
+      <text class="nicknameText">{{nickname}}</text>
+      <text class="dateText">{{time}}</text>
+    </view>
+    <text  class="priceText">{{price}}￥</text>
+  </view>
+  <view class="context-view">
+    <text class="typeText">#{{sellType}}#</text>
+    <image   bindtap='showMoreMenu' mode="widthFix" data-openid="{{openid}}" class="detailToolImg" src="/img/detailTool.png"></image>
+  </view>
+  <view class="contextView">
+    <text class="contextText">{{context}}
+</text>
+  </view>
+
+  <view wx:if="{{imgUrl[0]}}" class="images-view">
+    <block wx:for="{{imgUrl}}" wx:key="*this">
+      <image class="productImage" catchtap='previewImg' data-img="{{item}}" data-imgs="{{imgUrl}}"  mode="aspectFill" src="{{item}}"></image>
+    </block>
+  </view>
+
+  <view class="browser-view">
+
+  <image  mode="widthFix" src="/img/browser.png"></image>
+    <text>{{view}}</text>
+  </view>
+
+<view class="speakOfallUser-view">
+  <view class="speakTop-view">
+  <view class="leftLine-view"></view><text>{{leaveMsgCount}} 条留言</text><view class="rightLine-view"></view>
+  </view>
+  <view class="msg-view">
+  <block wx:for="{{leaveMsg}}" wx:key="*this" >
+  <view class="item-view" data-lid="{{item.lid}}" data-openid="{{item.openid}}" data-text="{{item.msg}}" bindlongtap='showOperation'>
+  
+
+  <view class="leaveUser-view">
+  <image class="leaveAvatarUrl" catchtap='openUserPage' data-openid="{{item.openid}}" src="{{item.avatarUrl}}"></image>
+  <text class="leaveName">{{item.nickname}}</text>
+  </view>
+  <text class="leaveMsgText">{{item.msg}}</text>
+  <text class="leaveTimeText">{{item.time}}</text>
+    </view>
+  </block>
+  </view>
+</view>
+
+
+ 
+</scroll-view>
+ <view class="leaveMsg-view">
+      <image class="penImg"  mode="aspectFit" catchtap='leaveMsgTap' src='/img/pen.png'></image>
+    <textarea auto-height class='leaveMsg' bindinput='leaveMsginput' value="{{leaveMsgValue}}" maxlength='0' placeholder='写评论'>
+    </textarea>
+
+  <button  class="btnSend" bindtap="leaveMsg"   >发送</button>
+  </view>
+</template>

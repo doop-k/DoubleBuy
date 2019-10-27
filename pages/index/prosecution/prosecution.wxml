@@ -1,0 +1,13 @@
+<view class="section-view">
+<view class="pid-view">当前物品编号:{{pid}}</view>
+  <picker class="picker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      当前选择：{{array[index]}}
+    </view>
+  </picker>
+
+  <view style="background:white; margin-top:1rpx;">
+  <textarea class="textarea" bindblur="inputContext"   value="{{context}}"  maxlength='0' placeholder="补充内容，以便更好的审查"></textarea>
+  </view>
+  <button class="btnOk"  bindtap="btnOk">确定</button>
+</view>

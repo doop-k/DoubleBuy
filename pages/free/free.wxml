@@ -1,0 +1,12 @@
+<import src="/pages/template/productTmp/productTmp" />
+<import src="/pages/template/nodataTmp/nodataTmp" />
+
+<scroll-view wx:if="{{product[0]}}" scroll-y style="height:555px;"  bindscrolltolower="updateData">
+
+
+  <block wx:for="{{product}}">
+    <template is="productTmp" data="{{...item}}" />
+  </block>
+</scroll-view>
+<template wx:else is="nodataTmp" />
+

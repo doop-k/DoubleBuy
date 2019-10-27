@@ -1,0 +1,33 @@
+<template name="baseInfo">
+<view class="baseInfo-view">
+<view class="free-view" catchtap='openUserPage' data-openid="{{openid}}"  >
+      <image  src='{{avatarUrl}}' class="avataUrl-img"></image>
+      <view class="userDate-view">
+        <text class="nickNameText">{{nickname}}</text>
+        <text class="postDateText">{{time}}</text>
+      </view>
+     <image class="detailTool" catchtap='operation' data-pid="{{pid}}"  mode="aspectFit" src="/img/detailTool.png" />
+    </view>
+
+
+    <view class="body-view" catchtap='openDetailPage'  data-pid="{{pid}}" >
+
+
+      <view class="context-view">
+        <text wx:if="{{productType=='double'}}" class="typeText">{{sellType}}</text>
+        <text class="contextText">{{context}}</text>
+      </view>
+      <view class="images-view">
+        <block wx:for="{{imgUrl}}">
+          <image class="productImage" catchtap='previewImg' data-img="{{item}}" data-imgs="{{imgUrl}}" src="{{item}}" mode="aspectFill" ></image>
+
+        </block>
+      </view>
+      <view class="browser-view">
+        <image mode="widthFix" class="browserImg" src="/img/browser.png"></image>
+        <text>{{view}}</text>
+      </view>
+    </view>
+
+</view>
+</template>

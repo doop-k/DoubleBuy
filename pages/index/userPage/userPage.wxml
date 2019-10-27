@@ -1,0 +1,3 @@
+<import src="/pages/template/userPageTmp/userpage" />
+
+<template is="userpage" data="{{...userInfo}}"   />

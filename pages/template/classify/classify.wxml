@@ -1,0 +1,20 @@
+<template name="classify">
+  <view class="classify-view">
+    <view style="flex:1"  bindtap='openThisType'  data-selltype="电子产品" >
+      <image src="/img/phone.png"></image>
+      <text>电子产品</text>
+    </view>
+    <view  style="flex:1" bindtap='openThisType'  data-selltype="生活用品">
+      <image src="/img/tools.png"></image>
+      <text>生活用品</text>
+    </view>
+    <view  style="flex:1" bindtap='openThisType'  data-selltype="二手书籍">
+      <image src="/img/book.png"></image>
+      <text>二手书籍</text>
+    </view>
+    <view  style="flex:1" bindtap='openThisType'  data-selltype="其他物品"  >
+      <image src="/img/more.png"></image>
+      <text>其他物品</text>
+    </view>
+  </view>
+</template>

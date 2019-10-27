@@ -1,0 +1,32 @@
+
+<import src="/pages/template/search/search" />
+<import src="/pages/template/classify/classify" />
+<import src="/pages/template/productTmp/productTmp" />
+
+<scroll-view  scroll-y style="height:555px;"  bindscrolltolower="updateData" >
+
+
+<swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">    
+ <block wx:for="{{swiperImg}}">
+    <swiper-item>
+      <image src="{{item}}" catchtap='seeNews' data-newsid="1" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper> 
+
+<template is="classify" />
+
+<view class="choose-view">
+<button class="btnChoose">{{hot_text}}</button>
+<button  class="btnChoose">{{new_text}}</button>
+</view>
+
+<view class="msg-view">
+<image src="/img/msg.png"></image>
+</view>
+
+<block wx:for="{{product}}">
+<template is="productTmp" data="{{...item}}"  />
+</block> 
+
+</scroll-view>

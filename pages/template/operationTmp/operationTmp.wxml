@@ -1,0 +1,12 @@
+<template name="operationTmp">
+  <view class="shadow-view" bindtap='hideOperation'>
+    <view class="operation-view">
+      <block wx:for="{{opList}}">
+        <view class="opitem-view" bindtap='operationThis'  data-name="{{item}}">
+          <text  >{{item}}</text>
+        </view>
+
+      </block>
+    </view>
+  </view>
+</template>
